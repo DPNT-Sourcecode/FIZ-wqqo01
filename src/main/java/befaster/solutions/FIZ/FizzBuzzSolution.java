@@ -42,7 +42,7 @@ public class FizzBuzzSolution {
     private boolean containsValOf(Integer givenNumber, Integer valOf) {
 
         String numStr = Integer.toString(givenNumber);
-        char charToCheck = Integer.toString(givenNumber).charAt(0);
+        char charToCheck = Integer.toString(valOf).charAt(0);
         boolean result = false;
 
         for(int i = 0; i < numStr.length(); i++) {
@@ -56,3 +56,4 @@ public class FizzBuzzSolution {
 
 
 }
+
