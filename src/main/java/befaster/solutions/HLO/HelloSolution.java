@@ -7,6 +7,7 @@ public class HelloSolution {
         if(friendName == null || friendName.isEmpty())
             throw new IllegalArgumentException("The given arg is not valid");
 
-        return "Hello "+friendName;
+        return "Hello, World!";
     }
 }
+
