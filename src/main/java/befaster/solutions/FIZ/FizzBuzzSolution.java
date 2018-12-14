@@ -22,10 +22,10 @@ public class FizzBuzzSolution {
         if(!multi3 && !multi5)
             return Integer.toString(number);
 
-        if(multi3 && multi5) {
-            if(isDeluxe(number))
-                return "fizz buzz deluxe";
-
+        if(multi3 && multi5 && deluxe) {
+            return "fizz buzz deluxe";
+        }
+        else if(multi3 && multi5) {
             return "fizz buzz";
         }
         else if (multi3) {
@@ -79,6 +79,7 @@ public class FizzBuzzSolution {
 
 
 }
+
 
 
 
