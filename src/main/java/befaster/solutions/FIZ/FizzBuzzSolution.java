@@ -40,14 +40,14 @@ public class FizzBuzzSolution {
     private boolean containsValOf(Integer givenNumber, Integer valOf) {
 
         String val = Integer.toString(number);
+        char charTocheck = Integer.toString(number).charAt(0);
+
+        for(int i = 0; i < val.length(); i++) {
+            if( val.charAt(i))
+        }
 
         return false;
     }
 
 
 }
-
-
-
-
-
