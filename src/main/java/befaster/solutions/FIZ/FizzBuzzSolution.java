@@ -20,9 +20,8 @@ public class FizzBuzzSolution {
 
         if(isDeluxe(number)) {
             deluxe = true;
-
             if(isOdd(number)){
-                fakeDeluxe = false;
+                fakeDeluxe = true;
             }
         }
 
@@ -33,20 +32,31 @@ public class FizzBuzzSolution {
             return Integer.toString(number);
 
         if(multi3 && multi5 && deluxe) {
+            if(fakeDeluxe)
+                return "fizz buzz fake deluxe";
             return "fizz buzz deluxe";
         }
         else if(multi3 && multi5) {
             return "fizz buzz";
         }
         else if (multi3) {
-            if(deluxe)
+            if(deluxe) {
+                if(fakeDeluxe)
+                    return "fizz fake deluxe";
                 return "fizz deluxe";
+            }
             return "fizz";
         }
         else if (multi5) {
-            if(deluxe)
+            if(deluxe) {
+                if(fakeDeluxe)
+                    return "buzz fake deluxe";
                 return "buzz deluxe";
+            }
             return "buzz";
+        }
+        else if(fakeDeluxe) {
+            return "fake deluxe";
         }
         else if (deluxe)
             return "deluxe";
@@ -103,6 +113,7 @@ public class FizzBuzzSolution {
 
 
 }
+
 
 
 
