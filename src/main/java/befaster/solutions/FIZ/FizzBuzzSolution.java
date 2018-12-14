@@ -26,13 +26,27 @@ public class FizzBuzzSolution {
     }
 
     private boolean multipleOf(Integer givenNumber, Integer multipleOf) {
+        boolean result = false;
         if((givenNumber % multipleOf) == 0 )
-            return true;
+            result = true;
+
+        if(!result) {
+
+        }
+
+        return result;
+    }
+
+    private boolean containValOf(Integer givenNumber, Integer valOf) {
+        
+
 
         return false;
     }
 
+
 }
+
 
 
 
