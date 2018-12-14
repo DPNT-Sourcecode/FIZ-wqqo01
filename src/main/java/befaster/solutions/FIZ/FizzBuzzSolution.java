@@ -18,8 +18,16 @@ public class FizzBuzzSolution {
         if(multipleOf(number, 5) || containsValOf(number, 5))
             multi5 = true;
 
-        if(isDeluxe(number))
+        if(isDeluxe(number)) {
             deluxe = true;
+
+            if(isOdd(number)){
+                fakeDeluxe = false;
+            }
+        }
+
+
+
 
         if(!multi3 && !multi5 && !deluxe)
             return Integer.toString(number);
@@ -95,5 +103,6 @@ public class FizzBuzzSolution {
 
 
 }
+
 
 
