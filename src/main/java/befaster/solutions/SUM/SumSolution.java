@@ -6,10 +6,10 @@ import sun.nio.ch.IOStatus;
 public class SumSolution {
 
     public int compute(int x, int y) {
-        if (checkInput(x))
+        if (!checkInput(x))
             throw new IllegalArgumentException("The first arg is invalid");
 
-        if (checkInput(y))
+        if (!checkInput(y))
             throw new IllegalArgumentException("The second arg is invalid");
 
         return x+y;
@@ -22,4 +22,5 @@ public class SumSolution {
     }
 
 }
+
 
