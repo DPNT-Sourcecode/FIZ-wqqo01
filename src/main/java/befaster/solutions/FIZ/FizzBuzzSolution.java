@@ -6,8 +6,8 @@ public class FizzBuzzSolution {
 
     public String fizzBuzz(Integer number) {
         //throw new SolutionNotImplementedException();
-        boolean multi3 = multipleOf(number, 3);
-        boolean multi5 = multipleOf(number, 5);
+        boolean multi3 = multipleOf(number, 3) || containsValOf(number, 3);
+        boolean multi5 = multipleOf(number, 5) || containsValOf(number, 5);
 
         if(!multi3 && !multi5)
             return Integer.toString(number);
@@ -26,32 +26,29 @@ public class FizzBuzzSolution {
     }
 
     private boolean multipleOf(Integer givenNumber, Integer multipleOf) {
-        boolean result = false;
+
         if((givenNumber % multipleOf) == 0 )
-            result = true;
+            return true;
 
-        if(!result) {
-
-        }
-
-        return result;
+        return false;
     }
 
     private boolean containsValOf(Integer givenNumber, Integer valOf) {
 
-        String val = Integer.toString(number);
-        char charTocheck = Integer.toString(number).charAt(0);
+        String numStr = Integer.toString(givenNumber);
+        char charToCheck = Integer.toString(givenNumber).charAt(0);
         boolean result = false;
 
-        for(int i = 0; i < val.length(); i++) {
-            if( val.charAt(i) == charTocheck) {
-
+        for(int i = 0; i < numStr.length(); i++) {
+            if( numStr.charAt(i) == charToCheck) {
+                result = true;
+                break;
             }
         }
-
         return result;
     }
 
 
 }
+
 
