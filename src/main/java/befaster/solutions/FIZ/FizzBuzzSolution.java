@@ -41,13 +41,17 @@ public class FizzBuzzSolution {
 
         String val = Integer.toString(number);
         char charTocheck = Integer.toString(number).charAt(0);
+        boolean result = false;
 
         for(int i = 0; i < val.length(); i++) {
-            if( val.charAt(i))
+            if( val.charAt(i) == charTocheck) {
+
+            }
         }
 
-        return false;
+        return result;
     }
 
 
 }
+
