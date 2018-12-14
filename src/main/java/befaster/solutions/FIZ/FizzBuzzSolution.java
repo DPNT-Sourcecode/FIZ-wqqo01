@@ -8,12 +8,16 @@ public class FizzBuzzSolution {
         //throw new SolutionNotImplementedException();
         boolean multi3 = false;
         boolean multi5 = false;
+        boolean deluxe = false;
 
         if(multipleOf(number, 3) || containsValOf(number, 3))
             multi3 = true;
 
         if(multipleOf(number, 5) || containsValOf(number, 5))
             multi5 = true;
+
+        if(isDeluxe(number))
+            deluxe = true;
 
         if(!multi3 && !multi5)
             return Integer.toString(number);
@@ -75,6 +79,7 @@ public class FizzBuzzSolution {
 
 
 }
+
 
 
 
