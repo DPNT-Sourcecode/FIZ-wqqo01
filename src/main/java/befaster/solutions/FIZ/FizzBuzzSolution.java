@@ -94,12 +94,7 @@ public class FizzBuzzSolution {
         String numStr = Integer.toString(givenNumber);
         char charToCheck = Integer.toString(divisible).charAt(0);
 
-        for(int i = 0; i < numStr.length(); i++) {
-            if( numStr.charAt(i) != charToCheck) {
-                result = false;
-                break;
-            }
-        }
+        result = containsValOf(givenNumber, divisible);
 
         return result;
     }
@@ -114,5 +109,6 @@ public class FizzBuzzSolution {
 
 
 }
+
 
 
