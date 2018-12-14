@@ -85,13 +85,13 @@ public class FizzBuzzSolution {
         return result;
     }
 
-    private boolean isDeluxe(Integer givenNumber) {
+    private boolean isDeluxe(Integer givenNumber, Integer divisible) {
         boolean result = true;
         if (givenNumber < 10)
             return false;
 
         String numStr = Integer.toString(givenNumber);
-        char charToCheck = numStr.charAt(0);
+        char charToCheck = Integer.toString(divisible).charAt(0);
 
         for(int i = 0; i < numStr.length(); i++) {
             if( numStr.charAt(i) != charToCheck) {
@@ -113,3 +113,4 @@ public class FizzBuzzSolution {
 
 
 }
+
