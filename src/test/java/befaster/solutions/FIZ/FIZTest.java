@@ -16,5 +16,14 @@ public class FIZTest {
         fiz = new FizzBuzzSolution();
     }
 
+    @Test
+    public void fizzBuzzTest() {
+
+        String res = fiz.fizzBuzz(1);
+
+        System.out.println("  "+res);
+    }
+
 
 }
+
