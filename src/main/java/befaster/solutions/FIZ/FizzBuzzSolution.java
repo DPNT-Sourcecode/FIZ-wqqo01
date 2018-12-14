@@ -37,15 +37,16 @@ public class FizzBuzzSolution {
         return result;
     }
 
-    private boolean containValOf(Integer givenNumber, Integer valOf) {
-        
+    private boolean containsValOf(Integer givenNumber, Integer valOf) {
 
+        String val = Integer.toString(number);
 
         return false;
     }
 
 
 }
+
 
 
 
