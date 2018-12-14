@@ -18,7 +18,8 @@ public class FizzBuzzSolution {
         if(multipleOf(number, 5) || containsValOf(number, 5))
             multi5 = true;
 
-        if(isDeluxe(number)) {
+        if( (isDeluxe(number, multipleOf(number, 3), 3)) ||
+                (isDeluxe(number, multipleOf(number, 5), 5))) {
             deluxe = true;
             if(isOdd(number)){
                 fakeDeluxe = true;
@@ -85,9 +86,9 @@ public class FizzBuzzSolution {
         return result;
     }
 
-    private boolean isDeluxe(Integer givenNumber, Integer divisible) {
+    private boolean isDeluxe(Integer givenNumber, boolean divisibleBy, Integer divisible) {
         boolean result = true;
-        if (givenNumber < 10)
+        if (!divisibleBy)
             return false;
 
         String numStr = Integer.toString(givenNumber);
@@ -113,4 +114,5 @@ public class FizzBuzzSolution {
 
 
 }
+
 
