@@ -9,6 +9,8 @@ public class FizzBuzzSolution {
         boolean multi3 = false;
         boolean multi5 = false;
         boolean deluxe = false;
+        boolean fakeDeluxe = false;
+
 
         if(multipleOf(number, 3) || containsValOf(number, 3))
             multi3 = true;
@@ -83,6 +85,15 @@ public class FizzBuzzSolution {
         return result;
     }
 
+    private boolean isOdd(Integer number) {
+
+        if ((number % 2) == 0)
+            return false;
+
+        return true;
+    }
+
 
 }
+
 
