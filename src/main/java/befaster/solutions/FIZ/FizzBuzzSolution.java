@@ -28,7 +28,10 @@ public class FizzBuzzSolution {
         else if(multi3 && multi5) {
             return "fizz buzz";
         }
+
         else if (multi3) {
+            if(deluxe)
+                return "fizz deluxe";
             return "fizz";
         }
         else if (multi5) {
@@ -81,4 +84,3 @@ public class FizzBuzzSolution {
 
 
 }
-
