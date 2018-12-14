@@ -19,19 +19,20 @@ public class FizzBuzzSolution {
             return "fizz";
         }
         else if (multi5) {
-
+            return "buzz";
         }
 
-
+        return Integer.toString(number);
     }
 
-    private boolean multipleOf(Integer givenNumber, Integer multiple) {
-        if((givenNumber % multiple) == 0 )
+    private boolean multipleOf(Integer givenNumber, Integer multipleOf) {
+        if((givenNumber % multipleOf) == 0 )
             return true;
 
         return false;
     }
 
 }
+
 
 
