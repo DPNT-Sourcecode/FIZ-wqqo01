@@ -26,9 +26,6 @@ public class FizzBuzzSolution {
             }
         }
 
-
-
-
         if(!multi3 && !multi5 && !deluxe)
             return Integer.toString(number);
 
