@@ -6,8 +6,14 @@ public class FizzBuzzSolution {
 
     public String fizzBuzz(Integer number) {
         //throw new SolutionNotImplementedException();
-        boolean multi3 = multipleOf(number, 3) || containsValOf(number, 3);
-        boolean multi5 = multipleOf(number, 5) || containsValOf(number, 5);
+        boolean multi3 = false;
+        boolean multi5 = false;
+
+        if(multipleOf(number, 3) || containsValOf(number, 3))
+            multi3 = true;
+
+        if(multipleOf(number, 5) || containsValOf(number, 5))
+            multi5 = true;
 
         if(!multi3 && !multi5)
             return Integer.toString(number);
@@ -50,3 +56,4 @@ public class FizzBuzzSolution {
 
 
 }
+
