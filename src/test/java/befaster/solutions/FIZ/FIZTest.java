@@ -19,10 +19,11 @@ public class FIZTest {
     @Test
     public void fizzBuzzTest() {
 
-        String res = fiz.fizzBuzz(1);
+        String res = fiz.fizzBuzz(333);
 
         System.out.println("  "+res);
     }
 
 
 }
+
