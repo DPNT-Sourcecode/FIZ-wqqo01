@@ -34,6 +34,8 @@ public class FizzBuzzSolution {
         else if (multi5) {
             return "buzz";
         }
+        else if (deluxe)
+            return "deluxe";
 
         return Integer.toString(number);
     }
@@ -79,8 +81,3 @@ public class FizzBuzzSolution {
 
 
 }
-
-
-
-
-
