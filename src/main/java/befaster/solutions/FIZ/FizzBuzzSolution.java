@@ -10,10 +10,16 @@ public class FizzBuzzSolution {
         boolean multi5 = multipleOf(number, 5);
 
         if(!multi3 && !multi5)
-            return "";
+            return Integer.toString(number);
 
         if(multi3 && multi5) {
-            return
+            return "fizz buzz";
+        }
+        else if (multi3) {
+            return "fizz";
+        }
+        else if (multi5) {
+
         }
 
 
@@ -27,4 +33,5 @@ public class FizzBuzzSolution {
     }
 
 }
+
 
