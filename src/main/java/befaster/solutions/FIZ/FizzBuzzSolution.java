@@ -19,7 +19,7 @@ public class FizzBuzzSolution {
         if(isDeluxe(number))
             deluxe = true;
 
-        if(!multi3 && !multi5)
+        if(!multi3 && !multi5 && !deluxe)
             return Integer.toString(number);
 
         if(multi3 && multi5 && deluxe) {
@@ -81,3 +81,4 @@ public class FizzBuzzSolution {
 
 
 }
+
